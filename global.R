@@ -26,8 +26,8 @@ getFax <- function(neighborhood) {
 }
 
 
-processedNames <- function(name) {
-    name = gsub("_", "", x)
+formattedNames <- function(name) {
+    name = gsub("_", " ", names(name))
     return(name)
 }
 

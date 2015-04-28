@@ -24,9 +24,7 @@ function(input, output, session) {
     v <- updateFax()
     print(v)
 
-    processedNames
-
-    wordcloud(names(v), as.numeric(v), scale=c(8,0.5),
+    wordcloud(formattedNames(v), as.numeric(v), scale=c(8,0.5),
 #                  min.freq = input$freq, max.words=input$max,
                   colors=brewer.pal(8, "Dark2"))
   })
